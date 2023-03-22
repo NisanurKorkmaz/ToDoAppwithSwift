@@ -5,6 +5,52 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>A7025354-462F-467B-BB82-9E94B9AC9A2F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>1102B23E-2A13-43BE-A015-C91FE8F09D57</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-todo-2023.03.22_11-10-32-+0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>todo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>todo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run todo</string>
+			<key>timeStartedRecording</key>
+			<real>701165432.03734899</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run todo</string>
+			<key>uniqueIdentifier</key>
+			<string>A7025354-462F-467B-BB82-9E94B9AC9A2F</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
