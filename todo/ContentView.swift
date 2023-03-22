@@ -15,7 +15,7 @@ struct TodoItem: Identifiable {
 struct TodoList: View {
     @State var items = [TodoItem]()
     @State var newTask = ""
-
+    let orange = Color.orange
     
     var body: some View {
         VStack {
@@ -26,23 +26,37 @@ struct TodoList: View {
             
             HStack {
                 TextField("New task", text: $newTask)
+                    .padding(.all)
+                    .background(Color.pink.opacity(0.3))
+                    .cornerRadius(25)
                 Button(action: addTask) {
                     Text("Add")
+                        .foregroundColor(Color.red.opacity(0.7))
                 }
             }.padding()
+//            .background(Color.red)
+            
 
             List(items) { item in
                 HStack {
                     Text(item.task)
+//                        .foregroundColor(Color.green)
                     Spacer()
                     Button(action: { removeTask(item) }) {
                         Image(systemName: "trash")
                             .foregroundColor(.red)
                     }
                 }
+                
             }
+//            .background(orange)
+            
+            
         }
+        .background(Color.red.opacity(0.3))
+//        .accentColor(orange)
     }
+
 
     func addTask() {
         if !newTask.isEmpty {
