@@ -15,7 +15,6 @@ struct TodoItem: Identifiable {
 struct TodoList: View {
     @State var items = [TodoItem]()
     @State var newTask = ""
-    let orange = Color.orange
     
     var body: some View {
         VStack {
@@ -23,38 +22,38 @@ struct TodoList: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.top, 50)
+                .foregroundColor(Color.red.opacity(0.7))
             
             HStack {
                 TextField("New task", text: $newTask)
                     .padding(.all)
-                    .background(Color.pink.opacity(0.3))
+                    .background(Color.pink.opacity(0.4))
                     .cornerRadius(25)
+                    .accentColor(.red)
                 Button(action: addTask) {
                     Text("Add")
                         .foregroundColor(Color.red.opacity(0.7))
                 }
-            }.padding()
-//            .background(Color.red)
+                
+            }
+                .padding()
             
-
-            List(items) { item in
-                HStack {
-                    Text(item.task)
-//                        .foregroundColor(Color.green)
-                    Spacer()
-                    Button(action: { removeTask(item) }) {
-                        Image(systemName: "trash")
-                            .foregroundColor(.red)
+            VStack{
+                List(items) { item in
+                    HStack {
+                        Text(item.task)
+                            .foregroundColor(Color.red)
+                        Spacer()
+                        Button(action: { removeTask(item) }) {
+                            Image(systemName: "trash")
+                                .foregroundColor(.red)
+                        }
                     }
                 }
                 
             }
-//            .background(orange)
-            
-            
         }
         .background(Color.red.opacity(0.3))
-//        .accentColor(orange)
     }
 
 
