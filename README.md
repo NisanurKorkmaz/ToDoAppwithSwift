@@ -3,6 +3,10 @@
 ## :calling: About
 A basic ToDo App with SwiftUI.
 
+## :gear: Technologies
+- [Swift](https://developer.apple.com/swift/)
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/)
+
 ## :camera_flash: Screenshots
 | Empty | With ToDo's |
 | --- | --- |
